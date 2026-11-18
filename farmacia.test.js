@@ -1,7 +1,7 @@
 
 /** @jest-environment jsdom */
 
-const { validarFuncionario } = require("./script");
+const { validarFuncionario } = require("./farmacia");
 
 describe("Testes unitários - Cadastro Farmácia Salute", () => {
 
