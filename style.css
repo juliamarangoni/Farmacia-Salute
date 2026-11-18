@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-image: url("farmaciabackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #242323;
+    font-family: Arial, sans-serif;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: #b2bfa9;
+    padding: 10px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: -2px;
+    height: 90px;
+}
+
+/* SÍMBOLO DA FARMÁCIA */
+
+#logo {
+    width: 130px;
+    height: 130px;
+    display: block;
+    object-fit: contain;
+}
+
+/* NOME SALUTE */
+
+header div:nth-child(2) {
+    width: 190px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+#salute {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    max-width: none;
+    left: -43px;
+    top: -60px;
+}
+
+/* CONTEÚDO */
+
+main {
+    text-align: center;
+    width: 90%;
+    max-width: 750px;
+    margin: 40px auto;
+}
+
+#tituloCadastro {
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.descricao {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* FORMULÁRIO */
+
+form {
+    text-align: left;
+    background-color: #fbf9f5;
+    padding: 30px;
+    border-radius: 3px;
+    border: 1px solid #ddd7cf;
+}
+
+h3 {
+    margin: 20px 0;
+    color: #283a24;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input:not([type="radio"]), select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #b9232d;
+    border-color: #b9232d;
+}
+
+.turnos {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.turnos label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+}
+
+.turnos input {
+    accent-color: #283a24;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #283a24;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0d1309;
+}
+
+.limpar {
+    background-color: #242323;
+}
+
+#mensagem {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #b2bfa9;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+footer button {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    header {
+        gap: 5px;
+    }
+
+    #logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    header div:nth-child(2) {
+        width: 150px;
+        height: 55px;
+    }
+
+    #salute {
+        width: 237px;
+        left: -44px;
+        top: -61px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .turnos {
+        flex-wrap: wrap;
+    }
+}
