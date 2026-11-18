@@ -230,6 +230,7 @@ function salvarFuncionarioTXT(dados) {
 // EXPORTAÇÃO PARA TESTES UNITÁRIOS (JEST)
 if (typeof module !== "undefined" && module.exports) {
     module.exports = {
-        validarFuncionario
+        validarFuncionario,
+        salvarFuncionarioTXT
     };
 }
